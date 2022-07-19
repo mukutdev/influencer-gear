@@ -146,7 +146,7 @@ ul {
   border-radius: 50%;
   text-align: center;
   line-height: 18px;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
 }
 .icons i:hover {
   color: var(--btn-link-bg);
