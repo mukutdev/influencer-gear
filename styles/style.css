@@ -1,0 +1,129 @@
+/* Poppins & Inter Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+/* Global Css Styles */
+:root {
+  --main-font-color: #3a3a3a;
+  --alternative-heading-color: #18191f;
+  --paragraph-light-grey: #787885;
+  --white-color: #ffffff;
+  --star-color: #fb8200;
+  --btn-link-bg: #e02c6d;
+  --footer-bg: #0a0826;
+}
+h1 {
+  color: var(--main-font-color);
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+h2 {
+  color: var(--main-font-color);
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+}
+h3 {
+  color: var(--alternative-heading-color);
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+}
+p {
+  color: var(--paragraph-light-grey);
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+}
+a{
+    color: var(--alternative-heading-color);
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.btn{
+    background-color: var(--btn-link-bg);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 10px 24px;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+.btn:hover{
+    background-color: var(--footer-bg);
+    color: #ffffff;
+    margin-top: 20px;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1070px;
+    margin: 0 auto;
+}
+.margin{
+    margin: 50px 0;
+}
+/* Header area start */
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    flex-grow: 2;
+}
+.menu{
+    margin-right: 34px;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 15px;
+    transition: .3s ease-in-out;
+}
+.menu ul li:hover a{
+    color: var(--btn-link-bg);
+    
+}
+.icons i{
+    font-size: 20px;
+    margin: 0 10px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.icons i:hover{
+    color: var(--btn-link-bg);
+}
+/* Hero Section start */
+.hero-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-content p{
+    font-size: 16px;
+    margin: 50px 0;
+    margin-right: 100px;
+    color: var(--main-font-color);
+    font-weight: 600;
+}
+.hero-img img{
+    width: 450px;
+height: 450px;
+}
