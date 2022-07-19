@@ -107,6 +107,9 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.fa-bars {
+  display: none;
+}
 .logo {
   flex-grow: 2;
 }
@@ -127,6 +130,23 @@ ul {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+.shopping-cart {
+  position: relative;
+}
+.shopping-cart::after {
+  content: "2";
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  background-color: var(--btn-link-bg);
+  color: var(--white-color);
+  top: -9px;
+  right: -6px;
+  font-size: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 18px;
+}
 .icons i:hover {
   color: var(--btn-link-bg);
 }
@@ -142,6 +162,9 @@ ul {
   margin-right: 100px;
   color: var(--main-font-color);
   font-weight: 600;
+}
+.anchor-btn {
+  display: block;
 }
 .hero-img img {
   width: 450px;
@@ -255,4 +278,83 @@ hr {
 .social-icons i:hover {
   background-color: var(--white-color);
   color: var(--footer-bg);
+}
+/************************** 
+    Responsive Media queries 
+****************/
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .menu {
+    display: none;
+  }
+  .hero-wrapper {
+    flex-direction: column-reverse;
+  }
+  .hero-img img {
+    width: 257px;
+    height: 257px;
+  }
+  .hero-content h2 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .hero-content p {
+    margin: 10px 0;
+    text-align: center;
+    line-height: 26px;
+  }
+  .anchor-btn {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  .margin {
+    margin: 20px;
+  }
+  .logo-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+  }
+  .logo-wrapper img {
+    width: 20%;
+  }
+  .products-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .feature-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-img img {
+    width: 299px;
+    height: 188px;
+  }
+  .feature-description{
+    grid-row: 1;
+    text-align: center;
+  }
+  .feature-description h1{
+    font-size: 28px;
+  }
+  .feature-description p{
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .feature-description a{
+    display: inline-block;
+    margin: 10px 0;
+  }
+  .feature-img{
+    grid-row: 2;
+  }
+  
 }
