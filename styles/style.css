@@ -107,7 +107,7 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.fa-bars {
+.logo i {
   display: none;
 }
 .logo {
@@ -115,6 +115,9 @@ ul {
 }
 .menu {
   margin-right: 34px;
+}
+.menu h1{
+  display: none;
 }
 .menu ul li {
   display: inline-block;
@@ -291,7 +294,32 @@ hr {
     width: 95%;
     margin: 0 auto;
   }
-  .menu {
+  .logo{
+    width: 10%;
+  }
+  .menu{
+    margin: 0;
+    width: 60%;
+  }
+  .icons{
+    width: 30%;
+    text-align: right;
+  }
+  .logo i{
+    display: block;
+    font-size: 22px;
+  }
+  .logo h1{
+    display: none;
+  }
+  .menu h1{
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .menu ul {
     display: none;
   }
   .hero-wrapper {
